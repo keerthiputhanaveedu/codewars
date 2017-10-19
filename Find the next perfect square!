@@ -1,0 +1,14 @@
+function findNextSquare(sq) {
+  var result = 1;
+  var sqrRoot = 1;
+  while (result < sq) {
+    result = sqrRoot * sqrRoot;
+    if (result == sq) {
+    	var newSqr = sqrRoot + 1;
+      nextSqr = newSqr * newSqr;
+      return nextSqr;
+    }
+    sqrRoot++;
+  }
+  return false;
+}
