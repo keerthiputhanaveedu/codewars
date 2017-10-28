@@ -1,0 +1,15 @@
+function squareDigits(num){
+  var digit = num.toString().split('');
+   var completeNumber = ""; 
+ // console.log(digit);
+  
+  for (var i=0; i < digit.length; i++){
+  	var sqr = digit[i]*digit[i];
+    completeNumber = sqr + completeNumber;
+  }
+  return parseInt(completeNumber);
+}
+
+Test Cases:
+
+Test.assertEquals(squareDigits(9119), 811181);
